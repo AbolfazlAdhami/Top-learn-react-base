@@ -1,0 +1,1424 @@
+@font-face {
+        font-family: "BYekan";
+        src: url("fonts/BYekan-webfont.eot") format("eot"), url("fonts/BYekan-webfont.woff") format("woff"), url("fonts/BYekan-webfont.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+}
+html {
+        overflow-x: hidden;
+        font-size: 10px;
+}
+body {
+        margin: 0;
+        padding: 0;
+        font-family: "BYekan";
+        word-spacing: -1px;
+        background-color: #34495e;
+}
+
+/***********Default setting************/
+input,
+input:focus {
+        outline: none;
+        border: none;
+}
+
+a:link,
+a:hover,
+a:active {
+        text-decoration: none;
+        outline: 0 !important;
+}
+i,
+span,
+label,
+a {
+        display: inline-block;
+        font-weight: normal;
+}
+ul {
+        list-style: none !important;
+        list-style-type: none !important;
+        margin: 0;
+        padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+}
+img {
+        max-width: 100%;
+}
+
+/********** Transition ************/
+a,
+i,
+input[type="submit"],
+form button {
+        -webkit-transition: all 0.5s linear 0s;
+        -moz-transition: all 0.5s linear 0s;
+        -ms-transition: all 0.5s linear 0s;
+        -o-transition: all 0.5s linear 0s;
+        transition: all 0.5s linear 0s;
+}
+
+.user-account .avatar-layer ul:after,
+.term-content aside .statistics ul:after,
+.term-content aside .share-layer:after,
+.term-content .term-description ul li:after,
+.comment-list .comment-row:after,
+.term-categories .switch-field:after {
+        display: block;
+        clear: both;
+        content: "";
+        visibility: hidden;
+        height: 0;
+        line-height: 0;
+}
+
+/*           --------------------------------------------------------------------- Main Layout------------------ */
+
+.landing-layer {
+        width: 100%;
+        background: url("../images/slide.jpg") no-repeat center center / cover;
+        position: relative;
+}
+.landing-layer nav {
+        padding: 2.5rem 0;
+}
+.landing-layer nav ul li {
+        display: inline-table;
+}
+.landing-layer nav ul li a {
+        line-height: 2.5rem;
+        color: #ecf0f1;
+        font-size: 1.8rem;
+        padding: 0 0 0 1.5rem;
+}
+.landing-layer nav .clientarea {
+        text-align: left;
+        color: #ecf0f1;
+}
+.landing-layer nav .clientarea i {
+        color: #fff;
+        font-size: 2rem;
+        position: relative;
+        top: 0.5rem;
+        margin-left: 0.5rem;
+}
+.landing-layer nav .clientarea a {
+        color: #ecf0f1;
+}
+.landing-layer nav ul li a:hover,
+.landing-layer nav .clientarea a:hover {
+        color: #3498db;
+}
+.landing-layer header {
+        padding: 6rem 0;
+        text-align: center;
+        color: #ecf0f1;
+        word-spacing: -1px;
+}
+.landing-layer header .logo {
+        width: 25rem;
+        display: block;
+        margin: 0 auto 2rem;
+}
+.landing-layer header h1 {
+        line-height: 3rem;
+        padding: 1.5rem 0 2rem;
+        font-size: 3.2rem;
+        cursor: default;
+        letter-spacing: 0.2rem;
+}
+.landing-layer header h2,
+.landing-layer header h3 {
+        line-height: 2.5rem;
+        padding: 1rem 0;
+        font-size: 2.3rem;
+        cursor: default;
+}
+.landing-layer .search-form {
+        width: 50rem;
+        margin: 0 auto;
+        padding-bottom: 3rem;
+}
+.landing-layer .search-form form {
+        width: 100%;
+        height: 4.5rem;
+        position: relative;
+        margin-bottom: 2rem;
+}
+.landing-layer .search-form form input {
+        background-color: #fff;
+        border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        width: 100%;
+        line-height: 5rem;
+        font-size: 1.8rem;
+        border: 0;
+        padding: 0 2rem 0 6rem;
+        color: #2c373b;
+        border-radius: 0.5rem;
+        transition: all linear 0.5s;
+}
+.landing-layer .search-form form input:focus {
+        outline: 0.3rem solid #1cbdf9;
+}
+.landing-layer .search-form form button {
+        background-color: #1cbdf9;
+        color: #1e2023;
+        font-size: 2.5rem;
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: 0;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+}
+.landing-layer .search-form form button i {
+        position: relative;
+        top: 0.5rem;
+}
+.landing-layer .search-form form button:hover {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+}
+
+/* Main Menu */
+
+.main-menu {
+        background-color: #1cbdf9;
+        position: relative;
+        margin-bottom: 5rem;
+}
+.main-menu nav {
+        position: relative;
+}
+.main-menu nav > ul > li {
+        float: right;
+        padding: 1rem 0;
+        position: relative;
+}
+.main-menu nav > ul > li:first-child a {
+        padding-right: 0;
+}
+.main-menu nav > span {
+        font-size: 3.5rem;
+        color: #ecf0f1;
+        display: none;
+}
+.main-menu nav > span:hover {
+        color: #1e2023;
+        cursor: pointer;
+}
+.main-menu nav > ul > li > a {
+        color: #ecf0f1;
+        padding: 0 1.5rem;
+        border-left: 0.1px solid #1e2023;
+        font-size: 1.5rem;
+}
+.main-menu nav > ul > li:last-child > a {
+        border-left: 0;
+}
+.main-menu nav > ul > li > ul {
+        position: absolute;
+        top: 4.5rem;
+        right: 0;
+        background-color: #1cbdf9;
+        padding: 0.5rem 1rem;
+        border-bottom: 0.3rem solid #3498db;
+        min-width: 23rem;
+        white-space: nowrap;
+        display: none;
+        z-index: 1000;
+        border-radius: 0.5rem;
+        box-shadow: 0.25rem 0.25rem 0.2rem 0 rgba(250, 250, 250, 0.425);
+}
+.main-menu nav > ul > li > ul > li {
+        width: 100%;
+        padding: 0.1rem 0.5rem;
+        transition: all 0.5s linear 0s;
+}
+.main-menu nav > ul > li > ul > li > a {
+        padding: 0.5rem 1.5rem 0.5rem 1rem;
+        line-height: 3rem;
+        color: #fff;
+}
+.main-menu nav > ul > li:hover > a:hover {
+        color: #1e2023;
+}
+.main-menu nav > ul > li > ul > li:hover {
+        border-bottom: 0.2rem solid #252a2b;
+}
+.main-menu nav > ul > li > ul > li > a:hover {
+        color: #1e2023;
+}
+
+/* Footer */
+
+footer .top-footer {
+        width: 100%;
+        background-color: #26292c;
+        padding: 4rem 0 2rem;
+}
+.top-footer .list {
+        margin-bottom: 2rem;
+}
+.top-footer .list header {
+        margin-bottom: 2rem;
+        position: relative;
+}
+.top-footer .list header:before {
+        width: 100%;
+        content: "";
+        position: absolute;
+        height: 1rem;
+        right: 0;
+        top: 0;
+        margin-bottom: 1.2rem;
+        border-bottom: 0.1rem solid #1cbdf9;
+        z-index: 10;
+        transform: translateY(50%);
+}
+.top-footer .list header h4 {
+        color: #fff;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        display: inline-block;
+        background-color: #26292c;
+        z-index: 11;
+        position: relative;
+        padding-left: 2.5rem;
+}
+.top-footer .row .social ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+}
+.top-footer .row .social ul li a i {
+        font-size: 2.2rem;
+        padding: 1rem;
+        transition: all 0.5s linear 0s;
+        border-radius: 1rem;
+}
+.top-footer .row .social ul li a:hover i {
+        border: 0.1rem solid #1cbdf9;
+        border-radius: 1rem;
+}
+
+.top-footer .list ul li a {
+        display: block;
+        line-height: 2.7rem;
+        padding: 0.2rem 1.5rem 0.2rem 0;
+        color: #ecf0f1;
+        font-size: 1.6rem;
+        position: relative;
+}
+.top-footer .list ul li a:hover {
+        padding-right: 2rem;
+        color: #3498db;
+}
+.top-footer .row .social ul li a:hover {
+        padding: 0.2rem 1.5rem 0.2rem 0;
+}
+
+.bottom-footer {
+        background-color: #1e2023;
+        padding: 2rem 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+}
+.bottom-footer div {
+        width: fit-content;
+        padding: 0 1rem;
+        text-align: center;
+}
+.bottom-footer p {
+        color: #1cbdf9;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        text-align: justify;
+        padding: 0;
+        margin: 0;
+        cursor: default;
+}
+.bottom-footer a {
+        color: #ecf0f1;
+        font-size: 2.2rem;
+        padding: 0.5rem;
+}
+.bottom-footer a:hover {
+        color: #1cbdf9;
+}
+
+main {
+        padding: 3.5rem 0 4.5rem;
+}
+main#home-page {
+        background-color: #34495e;
+}
+
+/*  --------       ************* Main Layout************                  -------- */
+
+/* Breadcrumb */
+.breadcrumb {
+        background-color: transparent;
+        margin: 2rem 0;
+        padding-right: 0;
+}
+.breadcrumb li a,
+.breadcrumb li {
+        color: #1cbdf9;
+        cursor: pointer;
+}
+.breadcrumb li[aria-current] {
+        color: #e8e8e8;
+}
+/* Breadcrumb */
+
+.client-page {
+        width: 100%;
+        padding: 10rem 0;
+}
+.client-page .container-content {
+        width: 50rem;
+        margin: 0 auto;
+        padding: 2rem 2.5rem;
+        background-color: #34495e;
+        border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        box-shadow: 0 0 15px #ccc;
+}
+
+.client-page .container-content .input-group {
+        padding: 1rem 0;
+        width: 100%;
+}
+.client-page .container-content .input-group-addon {
+        width: 5.5rem;
+        font-size: 1.8rem;
+}
+.client-page .container-content .form-control {
+        height: 4rem;
+}
+.client-page .container-content header h2 {
+        font-size: 2.6rem;
+        font-weight: bold;
+        line-height: 4.5rem;
+        display: block;
+        text-align: center;
+        word-spacing: -0.2rem;
+        margin-bottom: 1.5rem;
+        color: #efefef;
+}
+.client-page .container-content .link {
+        padding: 1.5rem 0;
+}
+.client-page .container-content .link a {
+        display: block;
+        line-height: 3rem;
+        font-size: 1.4rem;
+        color: #1cbdf9;
+}
+.client-page .container-content .link a:hover {
+        color: #efefef;
+}
+.client-page .container-content .link a i {
+        font-size: 2rem;
+        margin-left: 0.5rem;
+        position: relative;
+        top: 0.2rem;
+}
+.client-page .container-content .link a i.bx {
+        font-size: 2rem;
+        right: -0.1rem;
+}
+.client-page .container-content .remember-me,
+.client-page .container-content .accept-rules {
+        margin-top: 1rem;
+        color: #ecf1f8;
+}
+.client-page .container-content input[type="checkbox"] {
+        position: relative;
+        top: 0.2rem;
+        margin-left: 0.5rem;
+        accent-color: #2aaf27;
+}
+
+.terms-items header {
+        text-align: center;
+        margin-bottom: 3.5rem;
+        margin-top: 3.5rem;
+}
+.terms-items header h2 {
+        text-align: center;
+        font-size: 2.2rem;
+        line-height: 3rem;
+        color: #f2f2f2;
+        font-weight: 600;
+}
+.terms-items header a {
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        font-weight: 500;
+        color: #fff;
+}
+.terms-items header a:hover {
+        color: #1cbdf9;
+}
+.terms-items .term-col article {
+        width: 100%;
+        margin-bottom: 3rem;
+        position: relative;
+        box-shadow: 0 0 0.6rem #ecf0f1;
+        background-color: #2c3e50;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: all 0.5s ease;
+}
+.terms-items .term-col article:hover {
+        box-shadow: 0 0 1rem #ecf0f1;
+}
+.terms-items .term-col article .img-layer,
+.terms-items .term-col article .img-layer img {
+        width: 100%;
+        display: block;
+        border-radius: 0.5rem 0.5rem 0 0;
+}
+.terms-items .term-col article h2 a {
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        line-height: 4rem;
+        height: 4rem;
+        color: #f2f2f2;
+        padding: 0 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+}
+.terms-items .term-col article h2 a:hover {
+        color: #1cbdf9;
+}
+.terms-items .term-col article span {
+        color: #1cbdf9;
+        padding: 0.8rem;
+        border-top: 0.1rem solid #ebebeb;
+        width: 100%;
+        display: block;
+}
+
+.terms-items .term-col article i {
+        color: #fff;
+        font-size: 1.3rem;
+        position: absolute;
+        left: 1rem;
+        bottom: 1.2rem;
+        font-style: normal;
+}
+
+/* ----------------------------UserAccount------------- */
+
+.user-account aside > section,
+.user-account .avatar-layer {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background-color: #2c3e50;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 0.5rem #ccc;
+        -moz-box-shadow: 0 0 0.5rem #ccc;
+        -webkit-box-shadow: 0 0 0.5rem #ccc;
+        border-radius: 0.5rem;
+}
+.user-account .avatar-layer .img-layer {
+        margin: 2rem auto 0;
+        position: relative;
+        z-index: 1;
+        width: 13rem;
+        height: 12rem;
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+}
+.user-account .avatar-layer .img-layer img {
+        width: 100%;
+        height: 100%;
+        border: none;
+        z-index: 1;
+        position: relative;
+        border-radius: 50%;
+}
+.user-account .avatar-layer .img-layer .change-image {
+        width: 95%;
+        height: 95%;
+        line-height: 10rem;
+        text-align: center;
+        font-size: 2.5rem;
+        color: rgba(0, 0, 0, 0.97);
+        background-color: rgba(0, 0, 0, 0.172);
+        position: absolute;
+        z-index: 2;
+        opacity: 0;
+        border-radius: 50%;
+}
+.user-account .avatar-layer .img-layer:hover .change-image {
+        opacity: 1;
+}
+.user-account .avatar-layer .detail {
+        width: 100%;
+        padding: 10px 0 15px;
+        text-align: center;
+}
+.user-account .avatar-layer .detail h3 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        word-spacing: -1px;
+        line-height: 2.5rem;
+        padding-bottom: 0.3rem;
+        color: #fff;
+}
+.user-account .avatar-layer .detail span {
+        font-size: 1.5rem;
+        word-spacing: -1px;
+        line-height: 2.5rem;
+        color: #efefef;
+        display: block;
+}
+.user-account aside > section header {
+        padding: 0.5rem 1.5rem;
+        border-bottom: 0.1rem solid #ecf1f8;
+}
+.user-account aside > section header h3 {
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+        color: #f2f2f2;
+        cursor: default;
+}
+.user-account aside > section .inner {
+        padding: 1rem 1.5rem;
+}
+.user-account aside > section .inner ul li a {
+        display: block;
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        padding: 0.4rem 0;
+        color: #fff;
+}
+.user-account aside > section .inner ul li a:hover {
+        color: #1cbdf9;
+        padding-right: 0.5rem;
+}
+.user-account .user-account-content {
+        margin-bottom: 2.5rem;
+        background-color: #2c3e50;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 0.5rem #ccc;
+        -moz-box-shadow: 0 0 0.5rem #ccc;
+        -webkit-box-shadow: 0 0 0.5rem #ccc;
+        border-radius: 0.5rem;
+}
+.user-account .user-account-content > header {
+        padding: 0.5rem 1.5rem;
+        border-bottom: 0.2rem solid #2980b9;
+        width: 100%;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 800;
+}
+.user-account .user-account-content > header h1 {
+        font-size: 1.8rem;
+        line-height: 3.5rem;
+}
+.user-account .user-account-content .inner {
+        padding: 2rem;
+}
+.user-account .user-account-content .inner .account-information h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        color: #1cbdf9;
+        font-weight: 500;
+}
+.user-account .user-account-content .inner .account-information ul li {
+        display: block;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        padding: 0.4rem 0;
+        color: #f2f2f2;
+        cursor: default;
+}
+
+.user-account .user-account-content .inner .account-information ul li i {
+        margin-left: 0.5rem;
+        position: relative;
+        top: 0.3rem;
+        font-size: 1.8rem;
+        color: #2980b9;
+}
+.user-account .form-layer {
+        padding: 0 2rem;
+}
+.user-account .form-layer .input-group {
+        margin-bottom: 1.3rem;
+}
+.user-account .form-layer .link {
+        padding: 1.5rem 0;
+}
+.user-account .form-layer .link a {
+        display: block;
+        line-height: 3rem;
+        font-size: 1.5rem;
+        color: #2980b9;
+}
+.user-account .form-layer .link a:hover {
+        color: #1cbdf9;
+}
+.user-account .form-layer .link a i {
+        font-size: 2rem;
+        margin-left: 0.5rem;
+        position: relative;
+        top: 0.5rem;
+        color: #efefef;
+}
+.user-account .form-layer .checkbox-layer {
+        margin-top: 1rem;
+}
+.form-layer .input-group .input-group-addon {
+        background-color: #2c3e50;
+        color: #fff;
+        cursor: default;
+}
+
+.form-layer .input-group .form-control::placeholder {
+        color: #878787;
+}
+.form-layer .input-group .form-control {
+        background-color: #25323fcb;
+        color: #fff;
+}
+.user-account .form-layer .checkbox-layer input[type="checkbox"],
+.user-account .form-layer .radio-layer input[type="radio"] {
+        position: relative;
+        top: 0.2rem;
+        margin-left: 0.5rem;
+        accent-color: #1dd21a;
+        color: #f2f2f2;
+}
+
+.user-account .form-layer .checkbox-layer label,
+.user-account .form-layer .radio-layer label {
+        margin-left: 2.5rem;
+        color: #f2f2f2;
+}
+
+/*  ------------------------------------SinglePage-------------------------------- */
+.term-content > header,
+.term-content aside .statistics,
+.term-content aside .teacher-info,
+.term-content aside .term-info,
+.term-content aside .tags-layer,
+.term-content aside .share-layer,
+.term-content .term-description,
+.term-content .user-comments,
+.term-categories .aside-section {
+        width: 100%;
+        margin-bottom: 2rem;
+        position: relative;
+        box-shadow: 0 0 0.5rem #ccc;
+        -moz-box-shadow: 0 0 0.5rem #ccc;
+        -webkit-box-shadow: 0 0 0.5rem #ccc;
+        background-color: #2c3e50;
+        border-radius: 0.5rem;
+}
+.term-content > header h1 {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding: 2rem 2.5rem;
+        color: #ecf0f1;
+}
+.term-content aside .statistics {
+        padding: 3rem 2rem 2rem;
+}
+.term-content aside .statistics ul li {
+        display: inline-table;
+        width: 33.33%;
+        text-align: center;
+        float: right;
+}
+.term-content aside .statistics ul li span {
+        font-size: 1.3rem;
+        color: #2980b9;
+        display: block;
+        padding-bottom: 0.8rem;
+}
+.term-content aside .statistics ul li i {
+        font-size: 1.4rem;
+        display: block;
+        font-style: normal;
+        color: #ecf0f1;
+}
+.term-content aside .statistics > a {
+        width: 100%;
+        border-radius: 0.5rem;
+        line-height: 4.8rem;
+        text-align: center;
+        display: block;
+        background-color: #2980b9;
+        color: #f2f2f2;
+        font-size: 1.8rem;
+        margin-top: 2.5rem;
+        font-weight: 700;
+        position: relative;
+}
+.term-content aside .statistics > a:hover {
+        background-color: #297fb99a;
+}
+
+.term-content aside .teacher-info {
+        padding: 2rem;
+}
+.term-content aside .teacher-info img {
+        width: 14rem;
+        height: 14rem;
+        border-radius: 100%;
+        display: block;
+        margin: 0 auto;
+}
+.term-content aside .teacher-info h2 {
+        width: 100%;
+        line-height: 2.5rem;
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 1.5rem 0;
+        color: #1cbdf9;
+}
+.term-content aside .teacher-info p {
+        line-height: 2.4rem;
+        text-align: justify;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0 1rem;
+        color: #e8e8e8;
+}
+
+.term-content aside .term-info {
+        padding: 2rem 2.5rem;
+}
+.term-content aside .term-info h2 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 0.2rem solid #f2f2f2;
+        margin-bottom: 20px;
+        color: #fff;
+}
+.term-content aside .term-info ul li span {
+        color: #f2f2f2;
+        padding-left: 0.5rem;
+}
+.term-content aside .term-info ul li {
+        font-size: 1.4rem;
+        letter-spacing: 0.1rem;
+        color: #1cbdf9;
+        line-height: 2.2rem;
+        padding: 0.5rem 0;
+}
+.term-content aside .tags-layer,
+.term-content aside .share-layer {
+        padding: 1.5rem 2rem;
+}
+.term-content aside .tags-layer a {
+        font-size: 1.3rem;
+        line-height: 2rem;
+        padding: 0.1rem 0.3rem;
+        background-color: #2980b9;
+        margin: 0.2rem;
+        color: #000;
+        border-radius: 0.5rem;
+}
+.term-content aside .tags-layer a:hover {
+        background-color: #1cbdf9;
+        color: #f2f2f2;
+}
+.term-content aside .share-layer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+}
+.term-content aside .share-layer span {
+        line-height: 2.5rem;
+        font-size: 1.4rem;
+        color: #ecf0f1;
+        width: auto;
+        display: table;
+        float: right;
+}
+.term-content aside .share-layer a {
+        width: 3rem;
+        height: 3rem;
+        line-height: 3.4rem;
+        font-size: 1.8rem;
+        color: #fff;
+        background-color: #4b4f4f;
+        border-radius: 100%;
+        text-align: center;
+        float: left;
+        margin-right: 0.6rem;
+}
+.term-content aside .share-layer a:hover {
+        background-color: #1cbdf9;
+}
+.term-content .term-description {
+        padding: 2.5rem 2.5rem 1rem;
+}
+.term-content .term-description img {
+        width: 100%;
+        margin-bottom: 2rem;
+        display: block;
+        border-radius: 0.5rem;
+}
+.term-content .term-description h2 {
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+        margin: 2.5rem 0;
+        color: #3498db;
+}
+.term-content .term-description p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: justify;
+        color: #fff;
+}
+.term-content .term-description ul li {
+        width: 100%;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 1.2rem;
+        background-color: #1cbdf9;
+        margin-bottom: 1.2rem;
+        cursor: default;
+}
+.term-content .term-description ul li:hover {
+        background-color: #1cbef9ac;
+}
+.term-content .term-description ul li h3 {
+        width: auto;
+        float: right;
+        display: inline-table;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        color: #e8e8e8;
+}
+.term-content .term-description ul li i {
+        font-size: 1.5rem;
+        width: auto;
+        display: inline-table;
+        line-height: 22px;
+        color: #222;
+        font-style: normal;
+        padding: 0 10px;
+        float: right;
+}
+.term-content .term-description ul li span {
+        font-size: 17px;
+        width: auto;
+        display: inline-table;
+        line-height: 22px;
+        color: #f2f2f2;
+        font-weight: 600;
+        float: left;
+}
+.term-content .user-comments {
+        padding: 2rem;
+}
+.term-content .user-comments header h3 {
+        padding-bottom: 2rem;
+        margin-bottom: 3.5rem;
+        font-size: 1.8rem;
+        border-bottom: 0.1rem solid #ebebeb;
+        color: #3498db;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+}
+.term-content .user-comments form input::placeholder {
+        color: #1cbdf9;
+}
+.term-content .user-comments form input {
+        height: 4rem;
+        background-color: transparent;
+        color: #f2f2f2;
+}
+.term-content .user-comments form textarea::placeholder {
+        color: #1cbdf9;
+}
+.term-content .user-comments form textarea {
+        resize: none;
+        height: 9.5rem;
+        background-color: transparent;
+        color: #f2f2f2;
+}
+.term-content .user-comments .btn-success {
+        width: 100%;
+        height: 4rem;
+        text-align: center;
+}
+
+.term-content .pagination {
+        width: auto;
+        margin: 3rem auto 1rem;
+        display: table;
+}
+.term-content .pagination i {
+        position: relative;
+        top: 0.2rem;
+}
+.term-categories .pagination {
+        width: auto;
+        margin: 1rem auto 4rem;
+        display: table;
+}
+.term-categories .pagination i {
+        position: relative;
+        top: 0.2rem;
+}
+.comment-list {
+        padding-top: 3.5rem;
+        margin-top: 3.5rem;
+        border-top: 0.1rem solid #ebebeb;
+}
+.comment-list .comment-row {
+        width: 100%;
+        padding: 1.5rem 9rem 1.5rem 1.5rem;
+        position: relative;
+        border-bottom: 0.1rem solid #ebebeb;
+}
+.comment-list .comment-row img {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 100%;
+        position: absolute;
+        right: 0;
+        border: none;
+        top: 1.5rem;
+}
+.comment-list .comment-row .left-col {
+        width: 100%;
+        position: relative;
+}
+.comment-list .comment-row .left-col h3 {
+        display: block;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 0.5rem;
+        color: #f2f2f2;
+}
+.comment-list .comment-row .left-col span {
+        display: block;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        margin-bottom: 0.5rem;
+        color: #ccc;
+}
+.comment-list .comment-row .left-col p {
+        display: block;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        text-align: justify;
+        margin-bottom: 0;
+        color: #fff;
+}
+
+/*  ------------------------------------SinglePage-------------------------------- */
+
+.term-categories .top-bar {
+        background-color: #2c3e50;
+        box-shadow: 0 0 0.6rem #ccc;
+        padding: 1.5rem 2rem 2rem;
+        margin-bottom: 2.5rem;
+        position: relative;
+        border-radius: 0.5rem;
+}
+.term-categories > .top-bar > header {
+        position: relative;
+        height: 4.5rem;
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 0.1rem solid #ebebeb;
+}
+.term-categories > .top-bar > header h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: #fff;
+}
+.term-categories > .top-bar > header h1 span {
+        color: #1cbdf9;
+}
+.term-categories > .top-bar > header > span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 1.4rem;
+        color: #fff;
+        padding: 0 1.5rem;
+        border-radius: 3rem;
+        line-height: 3rem;
+        background-color: #252a2b;
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+}
+.term-categories > .top-bar > header > span:hover {
+        background-color: #2980b9;
+}
+.term-categories > .top-bar form {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+        border-radius: 0.5rem;
+}
+.term-categories > .top-bar form input::placeholder {
+        color: #1cbdf9;
+}
+.term-categories > .top-bar form input {
+        position: relative;
+        width: 100%;
+        height: 4rem;
+        border: none;
+        padding: 0 1.8rem 0 5rem;
+        font-size: 1.4rem;
+        line-height: 4rem;
+        color: #f2f2f2;
+        background-color: #34495e;
+        outline: none;
+}
+.term-categories > .top-bar form input:focus ~ button {
+        color: #f2f2f2;
+}
+.term-categories > .top-bar form button {
+        background-color: transparent;
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: 0;
+        font-size: 2.2rem;
+        color: #878787;
+        line-height: 4.5rem;
+        text-align: right;
+}
+.term-categories > .top-bar .select-ddl {
+        width: 100%;
+        background-color: #fff;
+        border: 0.1rem solid #e8e8e8;
+        position: relative;
+        border-radius: 0.5rem;
+}
+.term-categories > .top-bar .select-ddl select {
+        width: 100%;
+        padding: 0 1.5rem 0 0;
+        font-size: 1.6rem;
+        font-weight: 500;
+        height: 4rem;
+        line-height: 3.5rem;
+        border: 0;
+        background-color: #4b4f4f;
+        outline: none;
+        border-radius: 0.5rem;
+        color: #1cbdf9;
+}
+
+.term-categories .switch-field {
+        width: 100%;
+        overflow: hidden;
+        border: 0.1rem solid #e8e8e8;
+}
+.term-categories .switch-field input {
+        border: 0 none;
+        clip: rect(0px, 0px, 0px, 0px);
+        height: 0.1rem;
+        overflow: hidden;
+        position: absolute;
+        width: 0.1rem;
+}
+.term-categories .switch-field label {
+        background-color: #252a2b;
+        float: right;
+        color: #fff;
+        display: inline-block;
+        font-size: 1.3rem;
+        font-weight: normal;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        text-shadow: none;
+        transition: all 0.1s ease-in-out 0s;
+        margin-bottom: 0;
+        width: 33.33%;
+        height: 4rem;
+        line-height: 3rem;
+        font-weight: 500;
+}
+.term-categories .switch-field label:hover {
+        cursor: pointer;
+}
+.term-categories .switch-field input:checked + label {
+        background-color: #1cbdf9;
+        color: #000;
+}
+.term-categories .aside-section header h3 {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        padding: 1.5rem;
+        border-bottom: 0.1rem solid #ebebeb;
+        margin-bottom: 1rem;
+}
+
+.term-categories .filter-by-price header h3 {
+        margin-bottom: 3rem;
+        color: #f2f2f2;
+}
+.term-categories .filter-by-price .price-range {
+        padding: 0 3.5rem 1.5rem;
+        color: #2aaf27;
+}
+/* onUsed Data */
+.term-categories .filter-by-price .max-price {
+        width: auto;
+        display: inline-table;
+        float: left;
+        font-size: 12px;
+        line-height: 25px;
+        position: relative;
+        left: -15px;
+        padding-top: 10px;
+}
+.term-categories .filter-by-price .min-price {
+        width: auto;
+        display: inline-table;
+        float: right;
+        font-size: 12px;
+        line-height: 25px;
+        position: relative;
+        right: -15px;
+        padding-top: 10px;
+}
+/* onUsed Data */
+.term-categories .filter-by-category header {
+        color: #fff;
+        font-size: 1.8rem;
+}
+.term-categories .filter-by-category ul {
+        padding: 0 0.5rem 1rem;
+}
+.term-categories .filter-by-category ul li {
+        padding: 0.5rem 1.5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: #ecf1f8;
+}
+.term-categories .filter-by-category ul li input {
+        position: relative;
+        top: 0.3rem;
+        margin-left: 0.3rem;
+}
+
+/* --------------------------------------------Responsive Style ------------------------------------------*/
+
+@media screen and (max-width: 991px) {
+        .main-menu nav > ul > li:hover > a:hover {
+                color: #1cbdf9;
+        }
+        .main-menu nav .caret-icon i {
+                cursor: pointer;
+        }
+        .main-menu nav .caret-icon i:hover {
+                color: #1cbdf9;
+        }
+        .main-menu nav > span {
+                display: block;
+        }
+        .main-menu nav > ul {
+                display: none;
+        }
+        .main-menu {
+                height: 44px;
+        }
+        .main-menu nav {
+                width: 5rem;
+                height: 4.4rem;
+        }
+        .main-menu nav > span {
+                display: block;
+        }
+        .main-menu nav > ul {
+                position: absolute;
+                min-width: 50rem;
+                white-space: nowrap;
+                right: 0;
+                top: 4.4rem;
+                background-color: #2c373b;
+                border-bottom: 0.3rem solid #34495e;
+                padding: 1rem 1.5rem 1.5rem;
+                z-index: 1000;
+                display: none;
+        }
+        .main-menu nav > ul > li {
+                width: 100%;
+                float: none;
+                padding: 0.5rem 0;
+                position: relative;
+        }
+        .main-menu nav > ul > li > a {
+                border-left: 0;
+        }
+        .main-menu nav > ul > li:nth-child(1) a {
+                padding-right: 1.5rem;
+        }
+        .main-menu nav > ul > li > ul {
+                box-shadow: none;
+        }
+        .main-menu nav > ul > li .caret-icon {
+                position: absolute;
+                left: 0.5rem;
+                top: 0;
+                color: #fff;
+                width: 2rem;
+                height: 2rem;
+                font-size: 2.2rem;
+        }
+        .main-menu nav > ul > li ul {
+                position: static;
+        }
+        .main-menu nav > ul > li > ul > li > a {
+                display: block;
+                width: 100%;
+        }
+        .client-page {
+                padding: 5rem 0;
+        }
+        .term-categories .switch-field {
+                margin-top: 1rem;
+        }
+        .term-categories > .top-bar .select-ddl {
+                margin-top: 1rem;
+        }
+        .bottom-footer {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+        }
+}
+
+@media screen and (max-width: 768px) {
+        .client-page .container-content {
+                width: 92%;
+                margin-right: 4%;
+        }
+        .landing-layer header h1 {
+                font-size: 2.6rem;
+        }
+        .landing-layer header h2,
+        .landing-layer header h3 {
+                padding: 0.5rem 0;
+                font-size: 2rem;
+        }
+        .landing-layer .search-form {
+                width: 90%;
+                margin-right: 5%;
+        }
+        .landing-layer nav ul li a {
+                padding-right: 0;
+        }
+}
+
+@media screen and (max-width: 767px) {
+        .landing-layer header {
+                padding-top: 0;
+        }
+        .landing-layer nav .clientarea {
+                text-align: right;
+                padding-top: 1rem;
+        }
+        .landing-layer .search-form {
+                padding-bottom: 0;
+                width: 100%;
+                margin: 0;
+        }
+        .term-content .term-description ul li i {
+                padding: 0 0.2rem;
+        }
+        .term-content .term-description ul li span {
+                float: none;
+                display: block;
+                clear: both;
+                font-size: 1.5rem;
+                padding-top: 0.8rem;
+        }
+        .term-content .term-description {
+                padding: 1.5rem;
+        }
+}
+
+@media screen and (max-width: 480px) {
+        .landing-layer header h2,
+        .landing-layer header h3 {
+                display: none;
+        }
+        .landing-layer header h1 {
+                font-size: 2rem;
+        }
+        .landing-layer header {
+                padding-bottom: 2rem;
+        }
+        .term-categories > .top-bar > header > span {
+                display: none;
+        }
+}
+
+@media screen and (max-width: 420px) {
+        .comment-list .comment-row {
+                padding: 1.5rem 0;
+        }
+        .comment-list .comment-row img {
+                position: static;
+                display: block;
+                margin: 0 auto 5px;
+        }
+        .comment-list .comment-row .left-col h3,
+        .comment-list .comment-row .left-col span {
+                display: block;
+                text-align: center;
+        }
+}
+
+/* --------------------------------------------Responsive Style ------------------------------------------*/

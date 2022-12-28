@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import TopLearn from "./TopLearn";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+        return (
+                <Router>
+                        <Routes>
+                                <Route path="/" element={<TopLearn />}>
+                                        <Route path=":id" element={<TopLearn />} />
+                                </Route>
+                        </Routes>
+                </Router>
+        );
 }
 
 export default App;
+
+// import { Routes, Route, useParams, BrowserRouter as Router } from "react-router-dom";
+
+// function ProfilePage() {
+//         // Get the userId param from the URL.
+//         let { userId } = useParams();
+//         // ...
+
+//         return <h2 style={{ color: "red" }}>{userId}</h2>;
+// }
+
+// function App() {
+//         return (
+//                 <Routes>
+//                         <Route path="/">
+//                                 <Route path=":userId" element={<ProfilePage />} />
+//
+//                         </Route>
+//                 </Routes>
+//         );
+// }
+// export default App;
